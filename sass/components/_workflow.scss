@@ -1,0 +1,107 @@
+
+.workflow {
+	margin: 100px 0;
+
+	&__title {
+		@extend .title;
+
+		&:before {
+			@extend .upline;
+		}	
+	}
+
+	&__text {
+		@extend .text;
+	}
+
+
+}
+
+	.workflow__items {
+		margin: 100px 0;
+		display: flex;
+		flex-wrap: wrap;
+  		justify-content: space-around;
+
+		& img {
+			margin-top: 50px;
+			width: 92%;
+			position: absolute;
+		}
+		
+		.workflow__item {
+			width: 31%;
+			// margin-top: 50px;
+			flex-basis: 380px;
+			position: relative;
+
+			
+
+			&:nth-child(3) img {
+				width: 170px;
+			}
+
+			&__img {	
+				// margin: 0 auto;
+				text-align: center;
+
+		
+				& span:first-child {
+					opacity: 0.5;
+					width: 260px;
+					height: 260px;
+
+					margin-left: 60px;
+					margin-top: 0;
+				}
+
+				& span {
+					position: absolute;
+					margin-left: 92px;	
+					margin-top: 30px;
+					width: 200px;
+					height: 200px;
+					background-color: #DBE1E2;
+					display: block;
+					@include border-radius(50%);
+				}
+
+				& img {
+					position: relative;
+					// margin-left: 70px;
+					width: 140px;
+					margin-top: 70px;
+				}
+
+				& img {
+					width: 130px;
+				}
+			}
+
+			&__title {
+				color: $blueDark;
+				font: 18px $font-statick;
+				font-weight: 700;
+				margin-top: 150px;
+				text-align: center;
+
+
+			}
+			
+			&__text {
+				@extend .text;
+				font-weight: 500;
+				margin: 20px 20px;
+			}
+
+
+
+
+		} /* item */
+		
+
+
+
+
+
+	} /* items */

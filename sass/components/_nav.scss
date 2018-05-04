@@ -1,0 +1,26 @@
+.header__nav {
+
+	 ul {
+		display: flex;
+
+		list-style: none;
+
+		a {
+			padding: 10px 20px;
+			text-decoration: none;
+			color: #fff;
+			text-transform: uppercase;
+			font: 16px $font-statick;
+			font-weight: 700;
+
+			@include transition(color .6s);
+
+			&:hover {
+				color: $orangeMain;
+			}
+			
+		}
+
+	}
+
+}

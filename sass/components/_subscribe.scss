@@ -1,0 +1,101 @@
+
+.subscribe {
+		background-color: $blueMain;
+
+
+	&__items {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		padding: 80px 0;
+
+		&__item {
+
+			&__title {
+				font: 22px $font-statick;
+				font-weight: 700;
+				text-transform: uppercase;
+				color: #fff;
+
+				&:before {
+					@extend .upline;
+					margin: 0 0 10px 0;
+				}
+			}
+
+			&__text {
+				@extend .text;
+				text-align: left;
+				// font: 20px $font-statick;
+			}
+
+			&__input {
+				margin-top: 30px;
+
+				input[type="email"] {
+					background-color: $blueLight;
+					border: none;
+					padding: 20px;
+					width: 400px;
+
+					// color: #eee;
+
+				}
+
+				input[type="submit"] {
+					padding: 18.5px;
+					margin-left: -4px;
+					background-color: $orangeMain;
+					text-transform: uppercase;
+					font: 18px $font-statick;
+					color: #fff;
+					border: none;
+					cursor: pointer;
+
+					&:focus {
+						opacity: 0.8;
+					}
+				}
+			}
+
+			&:nth-child(2) {
+				background-image: url(../img/weekly.jpg);
+				background-size: cover;
+				background-position: 50% 80%;
+				width: 650px;
+
+				p {
+					display: table;
+					color: #fff;
+					background-color: $blueMain;
+					text-transform: uppercase;
+					font: 16px $font-statick;
+					margin-top: 0px;
+					padding: 20px 30px;
+					position: relative;
+
+					border-left: 80px solid $orangeMain;
+					
+					&:before {
+						content: '';
+						
+						background-image: url(../img/prize.svg);
+						background-size: cover;
+						// background-color: $orangeMain;
+
+						display: inline-block;
+						width: 40px;
+						height: 40px;
+						// padding: 10px;
+						position: absolute;
+						top: 10px;
+						left: -60px;
+						// right: 20px;
+					}
+				}
+
+
+			}
+		} /* item */
+	} /* items */
+}

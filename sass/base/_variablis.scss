@@ -1,0 +1,62 @@
+// Переменные
+
+$orangeMain: #fd784f;
+$blueMain: #0f1d42;
+$blueLight: #4a5b86;
+$blueDark: #07132d; 
+
+$textColor: #B4B0B0;
+
+$font-statick:     Helvetica, Georgia, sans-serif;
+
+// 4a5b86
+
+
+
+
+
+
+.container {
+	max-width: 1260px;
+	height: 100%;
+	// height: inherit;
+	margin: 0 auto;
+
+	overflow: hidden;
+}
+
+
+
+
+.title {
+	color: $blueDark;
+	font: 22px $font-statick;
+	font-weight: 700;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.text {
+	color: #B4B0B0;
+	text-align: center;
+	margin-top: 10px;
+	font: 16px $font-statick;
+	font-weight: 700;
+}
+
+.upline {
+	content: '';
+	width: 3.2px;
+	height: 25px;
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 10px;
+	// @include border-radius(50px);
+	border-radius: 50px;
+	background-color: $orangeMain;
+}
+.clearfix {
+	content: '';
+	display: block;
+	clear: both;
+}

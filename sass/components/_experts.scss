@@ -1,0 +1,37 @@
+
+.experts {
+	background-color: #DBE1E2;
+
+	&__title {
+		font: 26px $font-statick;
+		font-weight: 700;
+		color: $blueMain;
+		display: inline-block;
+		padding: 50px 0px;
+		// margin-top: 100px;
+
+
+		span {
+			color: $orangeMain;
+		}
+	}
+
+	&__button {
+		float: right;
+		padding: 40px 0;
+ 
+		input {
+			border: none;
+			background-color: $orangeMain;
+			padding: 10px 20px;
+			color: #fff;
+			font: 19px $font-statick;
+			cursor: pointer;
+
+			&:focus {
+				border: none;
+				opacity: 0.8;
+			}
+		}
+	}
+}

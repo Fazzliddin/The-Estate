@@ -1,0 +1,161 @@
+
+.footer {
+	padding: 100px 0;
+	background-color: $blueDark;
+
+	&__items {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		
+		.footer__item {
+			flex-basis: 20%;
+
+			h2 {
+				font: 18px $font-statick; 
+				// font-weight: 700;
+				text-transform: uppercase;
+				color: #fff;
+				margin-top: 50px;
+			}
+
+		}
+	}
+}
+
+/*================ Forst item ================== */
+.footer__item {
+
+
+
+	&__logo {
+
+
+		img {
+			margin-left: 20px;
+		}
+
+		h4 {
+			color: #fff;
+			font: 18px $font-statick;
+			font-weight: 700;
+			text-transform: uppercase;
+			margin-top: 5px;
+
+
+		}
+	}
+
+	&__icons {
+		display: flex;
+		
+		margin: 50px 0;
+	}
+	
+	p {
+		color: $textColor;
+		font: 16px $font-statick;
+		// letter-spacing: 0.5px;
+		
+
+
+	}
+
+}
+
+
+
+/*================ Second item ================== */
+
+	.footer__item {
+
+
+		&__links {
+			list-style: none;
+			margin-top: 50px;
+			
+			a {
+				text-decoration: none;
+				color: $textColor;
+				font: 17px $font-statick;
+				// font-weight: 700;
+				@include transition(all .6s);
+			
+			&:hover {
+				color: #fff;
+			}
+				li {
+					margin-top: 18px;
+				}
+			}
+		}
+
+	}
+
+
+
+
+
+
+
+/*================ Three item ================== */
+
+.footer__item {
+
+
+	&__inputs {
+		margin-top: 50px;
+
+		input {
+			margin-top: 10px;
+			width: 100%;
+			background-color: $blueMain;
+			border: none;
+			padding: 10px 20px;
+		}
+
+		input[type="text"] {
+			padding-bottom: 100px;
+			// width: 100%;
+		}
+
+		input[type="submit"] {
+			color: #fff;
+			font: 14px $font-statick;
+			font-weight: 700;
+			width: 100px;
+			background-color: $orangeMain;
+
+			cursor: pointer;
+		}
+	}
+}
+
+
+
+
+
+
+/*================ Four item ================== */
+
+
+
+
+
+
+
+
+
+.footer__mini {
+	padding: 15px 0;
+	text-align: center;
+	background-color: #100D4E;
+	background-color: #030B1D;
+	font: 16px $font-statick;
+	color: #777;
+
+	span {
+		color: #0B63CF;
+		// font-weight: 700;
+	}
+}

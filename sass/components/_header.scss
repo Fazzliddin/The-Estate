@@ -1,0 +1,54 @@
+
+.header {	
+	padding: 40px 0;
+	border-bottom: 1px solid #BAB5B5;	
+	width: 100%;
+	position: fixed;
+	z-index: 9999;
+
+
+	&__row {
+		padding-top: 10px;
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap
+	}
+
+	a {
+		text-decoration: none;
+		color: #fff;
+	}
+
+	&__logo {
+		text-align: center;
+		color: #fff;
+		text-transform: uppercase;
+		font: 20px $font-statick;
+		font-weight: 700;
+
+			img {
+				display: block;
+				margin: 0 auto;
+				margin-bottom: 5px;
+				}
+	}
+
+	&__btn {
+		
+		input {
+			cursor: pointer;	
+			background-color: $orangeMain;
+			border: none;
+			color: #fff;
+			font: 20px $font-statick;
+			padding: 10px 50px;
+
+			&:focus {
+				opacity: 0.7;
+			}
+		}
+	}
+
+}
+
+
