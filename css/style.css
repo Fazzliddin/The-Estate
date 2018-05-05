@@ -347,7 +347,7 @@ template {
     margin-top: 320px; }
 
 .header {
-  padding: 40px 0;
+  padding: 30px 0;
   border-bottom: 1px solid #BAB5B5;
   width: 100%;
   position: fixed;
@@ -807,6 +807,7 @@ template {
           top: 10px;
           left: -60px; }
 
+/*=========== Footer ================= */
 .footer {
   padding: 100px 0;
   background-color: #07132d; }
@@ -939,3 +940,20 @@ template {
 
 #gallery .photos section.showed {
   opacity: 1; }
+
+.banner__about {
+  background-image: url(../img/home_background.jpg);
+  background-attachment: fixed;
+  width: 100%;
+  height: 55vh; }
+  .banner__about__road {
+    margin-top: 30vh;
+    color: #fff;
+    font: 17px Helvetica, Georgia, sans-serif; }
+    .banner__about__road p {
+      padding: 5px 10px;
+      display: table;
+      background-color: #fd784f;
+      text-transform: uppercase;
+      font-weight: 700;
+      margin-bottom: 10px; }
