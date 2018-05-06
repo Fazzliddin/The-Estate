@@ -957,3 +957,44 @@ template {
       text-transform: uppercase;
       font-weight: 700;
       margin-bottom: 10px; }
+
+.plans {
+  margin: 100px 0; }
+  .plans__title {
+    color: #07132d;
+    font: 28px Helvetica, Georgia, sans-serif;
+    font-weight: 700; }
+  .plans__title__mini {
+    color: #07132d;
+    font: 15px Helvetica, Georgia, sans-serif;
+    font-weight: 700;
+    margin-top: 20px; }
+  .plans__text p {
+    color: #B4B0B0;
+    font: 15px Helvetica, Georgia, sans-serif;
+    margin-top: 40px; }
+  .plans__img {
+    padding: 0 40px; }
+  .plans__btn a {
+    margin-top: 40px;
+    padding: 15px 20px;
+    font: 12px Helvetica, Georgia, sans-serif;
+    font-weight: 700;
+    background-color: #fd784f;
+    display: table;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    -webkit-transition: opacity 0.6s;
+    -moz-transition: opacity 0.6s;
+    -ms-transition: opacity 0.6s;
+    transition: opacity 0.6s; }
+    .plans__btn a:hover {
+      opacity: 0.8; }
+  .plans .plans__items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1360px; }
+    .plans .plans__items__item:first-child {
+      width: 60%; }

@@ -1,0 +1,57 @@
+
+.plans {
+	margin: 100px 0;
+
+	&__title {
+		color: $titleColor;
+		font: 28px $font-statick;
+		font-weight: 700;
+	}
+
+	&__title__mini {
+		color: $titleColor;
+		font: 15px $font-statick;
+		font-weight: 700;
+		margin-top: 20px;
+	}
+
+	&__text p{
+		color: $textColor;
+		font: 15px $font-statick;
+		margin-top: 40px;
+
+	}
+
+	&__img {
+		padding: 0 40px;
+	}
+
+	&__btn a{
+		margin-top: 40px;
+		padding: 15px 20px;
+		font: 12px $font-statick;
+		font-weight: 700;
+		background-color: $orangeMain;
+		display: table;
+		color: #fff;
+		text-decoration: none;
+		text-transform: uppercase;
+		@include transition(opacity .6s);
+
+		&:hover {
+			opacity: 0.8;
+		}
+	}
+
+	
+	.plans__items {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		max-width: 1360px;
+
+		&__item:first-child {
+			width: 60%;
+		}
+	}
+}
