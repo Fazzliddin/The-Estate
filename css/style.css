@@ -998,3 +998,9 @@ template {
     max-width: 1360px; }
     .plans .plans__items__item:first-child {
       width: 60%; }
+
+.plans__icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 300px 0; }
