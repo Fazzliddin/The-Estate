@@ -154,8 +154,27 @@
 
 	&__icons {
 		display: flex;
-		
 		margin: 50px 0;
+
+		a {
+			text-align: center;
+			color: $orangeMain;
+			padding: 6px;
+			margin-left: 8px;
+			margin-right: 8px;
+			border: 1.5px solid $orangeMain;
+			@include border-radius(50%);
+			@include transition(all .6s);
+
+			&:hover {
+				border: 1.5px solid transparent;
+			}
+
+			i {
+				width: 18px;
+				font-size: 12px;
+			}
+		}
 	}
 	
 	p {
@@ -244,6 +263,47 @@
 
 /*================ Four item ================== */
 
+.footer__item:nth-child(4) {
+
+	h2 {
+		margin-bottom: 50px;
+	}
+
+	a {
+		color: $textColor;
+		font: 16px $font-statick;
+		margin-left: 10px;
+		// padding-left: 10px;
+		text-decoration: none;
+		@include transition(color .6s);
+
+		&:hover {
+			color: #fff;
+		}
+
+
+		img {
+			width: 20px;
+			position: absolute;
+			transform: translateX(-30px);
+		}
+
+		// &:before {
+		// 	content: '';
+		// 	display: block;
+		// 	background-image: url(../img/placeholder.svg);
+		// 	background-size: cover;
+		// 	width: 15px;
+		// 	height: 15px;
+		// }
+	}
+
+	li {
+		margin-bottom: 30px;
+		list-style: none;
+		margin-left: 20px;
+	}
+}
 
 
 
