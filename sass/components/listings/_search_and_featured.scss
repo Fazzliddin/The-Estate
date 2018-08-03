@@ -1,0 +1,238 @@
+.search_and_featured {
+	margin: 100px 0;
+
+	.items {
+		max-width: 1370px;
+		@include row-flex();
+	}
+
+	&-list {
+		float: right;
+		margin: 20px 0;
+
+	
+		a {
+			color: $blueMain;
+			text-decoration: none;
+			padding: 5px;
+			@include transition(all .3s);
+		}
+
+		.active {
+			color: #fff;
+			background-color: $orangeMain;
+		}
+
+	}
+
+
+}
+
+
+
+
+
+
+
+/*======================= searchListings ===================*/
+
+.searchListings {
+	background-color: $blueMain;
+	// width: 350px;
+	@include col();
+	@include size(4);
+
+	height: 900px;
+
+
+
+	&__title {
+
+		img {
+			// margin: 10px;
+			padding: 15px 0px 0px 25px;
+		}
+
+		 span {
+		 	font: 20px $font-statick;
+		 	font-weight: 700;
+		 	color: #fff;
+			background-color: $orangeMain;
+			padding: 15px 80px;
+			position: relative;
+			left: 11px;
+			top: -2px;
+			margin-left: 12px;
+		}	
+	}
+
+	&__features {
+		margin: 50px 30px;
+
+
+	}
+
+	&__btn {
+		margin: 50px 30px;
+		padding-bottom: 50px;
+
+		input {
+			cursor: pointer;
+			font: 14px $font-statick;
+			font-weight: 700;
+			text-transform: uppercase;
+			color: #fff;
+			background-color: $orangeMain;
+			border: none;
+			padding: 10px 30px;
+		}
+	}
+
+
+
+
+
+
+}
+
+
+.searchListings__items {
+	margin: 50px 30px;
+
+	
+}
+
+.searchListings__item {
+	margin: 3
+	0px 0;
+
+	p {
+		color: #fff;
+		font: 16px $font-statick;
+		margin-bottom: 5px;
+	}
+
+	select {
+		width: 100%;
+		height: 35px;
+		color: gray;
+	}
+
+	
+}
+
+.two__items {
+	display: flex;
+	justify-content: space-between;
+
+	&__item {
+		width: 48%;
+	}
+}
+
+
+
+/*======================= featuredListings ===================*/
+
+
+.featuredListings {
+	@include col();
+	@include size(8);
+
+	&__img {
+		margin-right: 50px;
+		img {
+			width: 350px;
+
+		}
+	}
+
+	&__sale {
+
+		img {
+			position: relative;
+			top: 20px;
+			left: 30px;
+			width: 40px;
+			display: inline;
+
+		}
+
+		div {
+			margin-top: -50px;
+			margin-left: 100px;
+
+			p {
+				font: 15px $font-statick;
+			}
+
+			h1 {
+				margin-top: -10px;
+				font: 28px $font-statick;
+				font-weight: 700;
+				color: $titleColor;
+			}
+		}
+
+		
+	}
+
+
+
+	&__title {
+		font: 22px $font-statick;
+		font-weight: 700;
+		color: $titleColor;
+		margin: 30px 0;
+	}
+
+	&__text {
+		font: 16px $font-statick;
+		color: $textColor;
+	}
+
+	&__icons {
+		display: flex;
+		margin: 20px 0;
+
+		&__icon {
+			margin-right: 20px;
+		}
+	}	
+
+	&__info {
+		
+		margin-right: 50px;
+		display: flex;
+		flex-wrap: wrap;
+
+		h5 {
+			margin-top: -5px;
+			margin-right: 20px;
+			display: table;
+			color: #fff;
+			padding: 5px 15px;
+			background-color: $orangeMain;
+		}
+	}
+
+
+}
+
+
+
+.featuredListings__items {
+
+}
+
+
+.featuredListings__item {
+	display: flex;
+	margin-bottom: 50px;
+	// @include row-flex();
+	background-color: #eee;
+	
+
+
+}
+
